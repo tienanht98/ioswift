@@ -8,18 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var VIewAnimation: UIView!
+    @IBOutlet weak var ScrV: UIScrollView!
+    @IBOutlet weak var constraintHeight: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        var offset = ScrV.contentOffset.y/150
+        print("\(VIewAnimation.frame.origin.y)")
+        print(offset)
+        if offset > 1 {
+            offset = 1
+            UIView.animate(withDuration: 1)
+            {
+                self.constraintHeight.constant = 60
+            }
+        }
+        else {
+            UIView.animate(withDuration: 1)
+            {
+                self.constraintHeight.constant = 0
+            }
+        }
     }
-
-
+    
+    
 }
 

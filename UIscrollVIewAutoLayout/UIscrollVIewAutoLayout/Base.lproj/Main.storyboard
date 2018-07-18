@@ -22,17 +22,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-eY-KU9" userLabel="containView">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyQ-4x-Q7T">
-                                                <rect key="frame" x="0.0" y="0.0" width="400" height="667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="400" id="dkp-HP-SPc"/>
+                                                    <constraint firstAttribute="height" constant="800" id="iDg-AO-Moa"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxY-i3-OZ7">
-                                                <rect key="frame" x="400" y="0.0" width="200" height="667"/>
+                                                <rect key="frame" x="400" y="0.0" width="200" height="800"/>
                                                 <color key="backgroundColor" red="0.9728074457" green="1" blue="0.057677319730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="4Em-EO-etd"/>
@@ -61,7 +62,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jCd-eY-KU9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="85o-cK-l6y"/>
+                            <constraint firstItem="jCd-eY-KU9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" priority="250" id="85o-cK-l6y"/>
                             <constraint firstItem="I5E-g3-vnW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PPQ-bA-tdP"/>
                             <constraint firstItem="jCd-eY-KU9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" priority="250" id="dQl-LU-Wsc"/>
                             <constraint firstItem="I5E-g3-vnW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gRy-ci-vZF"/>
