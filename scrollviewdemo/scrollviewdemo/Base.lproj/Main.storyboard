@@ -67,28 +67,25 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsE-pc-EfZ">
                                 <rect key="frame" x="0.0" y="676" width="414" height="60"/>
                                 <color key="backgroundColor" red="0.6539106346828607" green="1" blue="0.40323023450654949" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="399-pv-H93"/>
-                                    <constraint firstAttribute="width" constant="414" id="H8Y-ty-jIM"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bsE-pc-EfZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1fZ-Wz-llU"/>
-                            <constraint firstItem="bsE-pc-EfZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="22B-gi-KpZ"/>
                             <constraint firstItem="tta-yB-Hem" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="4Fe-DY-QIJ"/>
-                            <constraint firstItem="bsE-pc-EfZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Arl-Kn-CdO"/>
+                            <constraint firstItem="bsE-pc-EfZ" firstAttribute="top" secondItem="tta-yB-Hem" secondAttribute="bottom" constant="40" id="5Xg-WW-AJq"/>
+                            <constraint firstItem="bsE-pc-EfZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="70D-jZ-n5t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tta-yB-Hem" secondAttribute="trailing" constant="100" id="B8W-Xq-kZt"/>
+                            <constraint firstItem="bsE-pc-EfZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Elp-Gd-5I6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tta-yB-Hem" secondAttribute="bottom" constant="100" id="GsH-mf-1LR"/>
                             <constraint firstItem="tta-yB-Hem" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="HNM-I8-Pbg"/>
+                            <constraint firstItem="bsE-pc-EfZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZUr-M7-L0f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="ScrV" destination="tta-yB-Hem" id="qZl-KB-Ubm"/>
                         <outlet property="VIewAnimation" destination="bsE-pc-EfZ" id="L3e-cj-QlZ"/>
-                        <outlet property="constraintHeight" destination="399-pv-H93" id="Cok-1c-x1t"/>
+                        <outlet property="bottom" destination="5Xg-WW-AJq" id="zl2-Td-t3K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
