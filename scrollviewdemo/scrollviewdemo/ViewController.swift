@@ -15,10 +15,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var bottom: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
+       
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         var offset = ScrV.contentOffset.y/150
-        
+        print(ScrV.contentOffset.y)
         if offset > 1 {
             offset = 1
             
@@ -42,7 +43,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         }
     }
-    
     
     
 }
