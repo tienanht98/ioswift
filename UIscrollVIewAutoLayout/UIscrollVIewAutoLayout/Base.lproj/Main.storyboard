@@ -18,25 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5E-g3-vnW">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5E-g3-vnW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-eY-KU9" userLabel="containView">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="750" height="800"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyQ-4x-Q7T">
-                                                <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="400" id="dkp-HP-SPc"/>
+                                                    <constraint firstAttribute="width" constant="375" id="dkp-HP-SPc"/>
                                                     <constraint firstAttribute="height" constant="800" id="iDg-AO-Moa"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxY-i3-OZ7">
-                                                <rect key="frame" x="400" y="0.0" width="200" height="800"/>
+                                                <rect key="frame" x="375" y="0.0" width="375" height="800"/>
                                                 <color key="backgroundColor" red="0.9728074457" green="1" blue="0.057677319730000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="4Em-EO-etd"/>
+                                                    <constraint firstAttribute="width" constant="375" id="4Em-EO-etd"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -71,24 +71,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollview" destination="I5E-g3-vnW" id="j6y-Cv-CrJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="irb-W0-eDr">
-            <objects>
-                <viewController id="7XQ-8e-Htd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Wm8-7c-YJk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Sqo-Mn-fRi"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gZ2-JD-p3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
 </document>
